@@ -26,4 +26,8 @@ sudo systemctl enable slurmd
 sudo systemctl start slurmd
 
 
+sudo chmod a+r /var/log/slurm-llnl/slurm_jobacct.log
 
+
+# Start job
+sbatch --mem=100M --mincpus=1 job.sh
